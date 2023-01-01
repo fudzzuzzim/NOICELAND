@@ -51,147 +51,147 @@ table {
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-Bold.woff2") format("woff2"), url("../fonts/LibreFranklin-Bold.woff") format("woff");
+  src: url("LibreFranklin-Bold.woff2") format("woff2"), url("LibreFranklin-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-BoldItalic.woff2") format("woff2"), url("../fonts/LibreFranklin-BoldItalic.woff") format("woff");
+  src: url("ibreFranklin-BoldItalic.woff2") format("woff2"), url("LibreFranklin-BoldItalic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/LibreFranklin-ExtraBoldItalic.woff") format("woff");
+  src: url("LibreFranklin-ExtraBoldItalic.woff2") format("woff2"), url("LibreFranklin-ExtraBoldItalic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-ExtraLight.woff2") format("woff2"), url("../fonts/LibreFranklin-ExtraLight.woff") format("woff");
+  src: url("LibreFranklin-ExtraLight.woff2") format("woff2"), url("LibreFranklin-ExtraLight.woff") format("woff");
   font-weight: 200;
   font-style: light;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-ExtraBold.woff2") format("woff2"), url("../fonts/LibreFranklin-ExtraBold.woff") format("woff");
+  src: url("LibreFranklin-ExtraBold.woff2") format("woff2"), url("LibreFranklin-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-ExtraLightItalic.woff2") format("woff2"), url("../fonts/LibreFranklin-ExtraLightItalic.woff") format("woff");
+  src: url("LibreFranklin-ExtraLightItalic.woff2") format("woff2"), url("LibreFranklin-ExtraLightItalic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-Italic.woff2") format("woff2"), url("../fonts/LibreFranklin-Italic.woff") format("woff");
+  src: url("LibreFranklin-Italic.woff2") format("woff2"), url("LibreFranklin-Italic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-Light.woff2") format("woff2"), url("../fonts/LibreFranklin-Light.woff") format("woff");
+  src: url("LibreFranklin-Light.woff2") format("woff2"), url("LibreFranklin-Light.woff") format("woff");
   font-weight: 300;
   font-style: light;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-LightItalic.woff2") format("woff2"), url("../fonts/LibreFranklin-LightItalic.woff") format("woff");
+  src: url("LibreFranklin-LightItalic.woff2") format("woff2"), url("LibreFranklin-LightItalic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-Medium.woff2") format("woff2"), url("../fonts/LibreFranklin-Medium.woff") format("woff");
+  src: url("LibreFranklin-Medium.woff2") format("woff2"), url("LibreFranklin-Medium.woff") format("woff");
   font-weight: 500;
   font-style: medium;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-MediumItalic.woff2") format("woff2"), url("../fonts/LibreFranklin-MediumItalic.woff") format("woff");
+  src: url("LibreFranklin-MediumItalic.woff2") format("woff2"), url("LibreFranklin-MediumItalic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-Regular.woff2") format("woff2"), url("../fonts/LibreFranklin-Regular.woff") format("woff");
+  src: url("LibreFranklin-Regular.woff2") format("woff2"), url("LibreFranklin-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-BlackItalic.woff2") format("woff2"), url("../fonts/LibreFranklin-BlackItalic.woff") format("woff");
+  src: url("LibreFranklin-BlackItalic.woff2") format("woff2"), url("ibreFranklin-BlackItalic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-Black.woff2") format("woff2"), url("../fonts/LibreFranklin-Black.woff") format("woff");
+  src: url("LibreFranklin-Black.woff2") format("woff2"), url("LibreFranklin-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-SemiBold.woff2") format("woff2"), url("../fonts/LibreFranklin-SemiBold.woff") format("woff");
+  src: url("LibreFranklin-SemiBold.woff2") format("woff2"), url("LibreFranklin-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-SemiBoldItalic.woff2") format("woff2"), url("../fonts/LibreFranklin-SemiBoldItalic.woff") format("woff");
+  src: url("LibreFranklin-SemiBoldItalic.woff2") format("woff2"), url("LibreFranklin-SemiBoldItalic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-VariableFont_wght.woff2") format("woff2"), url("../fonts/LibreFranklin-VariableFont_wght.woff") format("woff");
+  src: url("LibreFranklin-VariableFont_wght.woff2") format("woff2"), url("LibreFranklin-VariableFont_wght.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-Thin.woff2") format("woff2"), url("../fonts/LibreFranklin-Thin.woff") format("woff");
+  src: url("LibreFranklin-Thin.woff2") format("woff2"), url("LibreFranklin-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: TenorSans;
   font-display: swap;
-  src: url("../fonts/TenorSans-Regular.woff2") format("woff2"), url("../fonts/TenorSans-Regular.woff") format("woff");
+  src: url("TenorSans-Regular.woff2") format("woff2"), url("TenorSans-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-ThinItalic.woff2") format("woff2"), url("../fonts/LibreFranklin-ThinItalic.woff") format("woff");
+  src: url("LibreFranklin-ThinItalic.woff2") format("woff2"), url("LibreFranklin-ThinItalic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: LibreFranklin;
   font-display: swap;
-  src: url("../fonts/LibreFranklin-Italic-VariableFont_wght.woff2") format("woff2"), url("../fonts/LibreFranklin-Italic-VariableFont_wght.woff") format("woff");
+  src: url("LibreFranklin-Italic-VariableFont_wght.woff2") format("woff2"), url("LibreFranklin-Italic-VariableFont_wght.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
@@ -629,7 +629,7 @@ table {
   }
   .wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .spoiler.active::before,
 .wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .spoiler.active::after {
-    background-color: red;
+    background-color: white;
   }
 }
 
