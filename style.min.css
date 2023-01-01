@@ -1,0 +1,640 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-Bold.woff2") format("woff2"), url("../fonts/LibreFranklin-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-BoldItalic.woff2") format("woff2"), url("../fonts/LibreFranklin-BoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/LibreFranklin-ExtraBoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-ExtraLight.woff2") format("woff2"), url("../fonts/LibreFranklin-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: light;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-ExtraBold.woff2") format("woff2"), url("../fonts/LibreFranklin-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-ExtraLightItalic.woff2") format("woff2"), url("../fonts/LibreFranklin-ExtraLightItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-Italic.woff2") format("woff2"), url("../fonts/LibreFranklin-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-Light.woff2") format("woff2"), url("../fonts/LibreFranklin-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: light;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-LightItalic.woff2") format("woff2"), url("../fonts/LibreFranklin-LightItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-Medium.woff2") format("woff2"), url("../fonts/LibreFranklin-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: medium;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-MediumItalic.woff2") format("woff2"), url("../fonts/LibreFranklin-MediumItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-Regular.woff2") format("woff2"), url("../fonts/LibreFranklin-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-BlackItalic.woff2") format("woff2"), url("../fonts/LibreFranklin-BlackItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-Black.woff2") format("woff2"), url("../fonts/LibreFranklin-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-SemiBold.woff2") format("woff2"), url("../fonts/LibreFranklin-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-SemiBoldItalic.woff2") format("woff2"), url("../fonts/LibreFranklin-SemiBoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-VariableFont_wght.woff2") format("woff2"), url("../fonts/LibreFranklin-VariableFont_wght.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-Thin.woff2") format("woff2"), url("../fonts/LibreFranklin-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: TenorSans;
+  font-display: swap;
+  src: url("../fonts/TenorSans-Regular.woff2") format("woff2"), url("../fonts/TenorSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-ThinItalic.woff2") format("woff2"), url("../fonts/LibreFranklin-ThinItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: LibreFranklin;
+  font-display: swap;
+  src: url("../fonts/LibreFranklin-Italic-VariableFont_wght.woff2") format("woff2"), url("../fonts/LibreFranklin-Italic-VariableFont_wght.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+.subtitle {
+  font-family: "LibreFranklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.author {
+  font-family: "LibreFranklin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 74px;
+}
+.blocks .block__text {
+  display: flex;
+  flex-direction: column;
+}
+.blocks .block__text .subtitle {
+  margin-top: 18px;
+}
+.blocks .block__text .title {
+  font-family: "TenorSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 18px;
+}
+.blocks .block__text .author {
+  margin-top: 15px;
+}
+
+.blocks:nth-child(1) {
+  margin-top: 0px;
+}
+
+.wrapper {
+  max-width: 100%;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 650px 3565px 600px;
+}
+.wrapper header {
+  grid-area: header;
+}
+.wrapper header .header__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wrapper header .header__wrapper .header {
+  padding: 37px 0px 37px 0px;
+}
+.wrapper header .header__wrapper .header .header__container .header__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper header .header__wrapper .header .header__container .header__body .header__nav {
+  display: flex;
+  flex-direction: row;
+}
+.wrapper header .header__wrapper .header .header__container .header__body .header__nav a {
+  font-family: "LibreFranklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+  margin-left: 40px;
+}
+.wrapper header .header__wrapper .header__intro .intro__container .intro__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper header .header__wrapper .header__intro .intro__container .intro__body .intro__img .img {
+  max-width: 721px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 1155px) {
+  .wrapper header .header__wrapper .header__intro .intro__container .intro__body .intro__img .img {
+    max-width: 621px;
+  }
+}
+@media (max-width: 1055px) {
+  .wrapper header .header__wrapper .header__intro .intro__container .intro__body .intro__img .img {
+    max-width: 561px;
+  }
+}
+@media (max-width: 1000px) {
+  .wrapper header .header__wrapper .header__intro .intro__container .intro__body .intro__img .img {
+    display: none;
+  }
+}
+.wrapper header .header__wrapper .header__intro .intro__container .intro__body .intro__content {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper header .header__wrapper .header__intro .intro__container .intro__body .intro__content .title {
+  font-family: "TenorSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 10px;
+}
+.wrapper header .header__wrapper .header__intro .intro__container .intro__body .intro__content .text {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  margin-top: 27px;
+}
+.wrapper header .header__wrapper .header__intro .intro__container .intro__body .intro__content .author {
+  margin-top: 40px;
+}
+@media (max-width: 1000px) {
+  .wrapper header .header__wrapper .header__intro .intro__container .intro__body {
+    justify-content: center;
+  }
+}
+.wrapper main {
+  grid-area: main;
+  height: 100%;
+}
+.wrapper main .main__wrapper {
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.wrapper main .main__wrapper .content__1 .content__container .content__body {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper main .main__wrapper .content__1 .content__container .content__body .blocks {
+  margin-top: 74px;
+}
+.wrapper main .main__wrapper .content__1 .content__container .content__body .blocks .block .block__img .img {
+  max-width: 3187px;
+  width: 100%;
+  height: auto;
+}
+.wrapper main .main__wrapper .content__1 .content__container .content__body .blocks .block .block__text .subtitle {
+  margin-top: 18px;
+}
+.wrapper main .main__wrapper .content__1 .content__container .content__body .blocks .block .block__text .title {
+  margin-top: 18px;
+}
+.wrapper main .main__wrapper .content__1 .content__container .content__body .blocks .block .block__text .author {
+  margin-top: 15px;
+}
+@media (max-width: 1171px) {
+  .wrapper main .main__wrapper .content__1 .content__container .content__body .blocks {
+    justify-content: space-evenly;
+  }
+  .wrapper main .main__wrapper .content__1 .content__container .content__body .blocks .block:first-child {
+    display: none;
+  }
+}
+@media (max-width: 820px) {
+  .wrapper main .main__wrapper .content__1 .content__container .content__body .blocks {
+    justify-content: center;
+  }
+  .wrapper main .main__wrapper .content__1 .content__container .content__body .blocks .block:last-child {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .wrapper main .main__wrapper .content__1 .content__container .content__body .blocks {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.wrapper main .main__wrapper .content__1 .content__container .content__body .blocks:nth-child(1) {
+  margin-top: 0px;
+}
+.wrapper main .main__wrapper .content__2 .content__container .content__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper main .main__wrapper .content__2 .content__container .content__body .button {
+  margin-top: 90px;
+}
+.wrapper main .main__wrapper .content__2 .content__container .content__body .button .btn {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  width: 205px;
+  height: 54px;
+}
+.wrapper main .main__wrapper .content__2 .content__container .content__body .button .btn a {
+  font-family: "LibreFranklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+.wrapper main .main__wrapper .content__2 .content__container .content__body .blocks .block .block__img .img {
+  max-width: 285px;
+  width: 100%;
+  height: auto;
+}
+.wrapper main .main__wrapper .content__2 .content__container .content__body .blocks .block .block__text .title {
+  font-weight: 400;
+  font-size: 19px;
+}
+@media (max-width: 1171px) {
+  .wrapper main .main__wrapper .content__2 .content__container .content__body .blocks {
+    justify-content: space-evenly;
+  }
+  .wrapper main .main__wrapper .content__2 .content__container .content__body .blocks .block:first-child {
+    display: none;
+  }
+}
+@media (max-width: 933px) {
+  .wrapper main .main__wrapper .content__2 .content__container .content__body .blocks {
+    justify-content: center;
+  }
+  .wrapper main .main__wrapper .content__2 .content__container .content__body .blocks .block:last-child {
+    display: none;
+  }
+}
+@media (max-width: 933px) {
+  .wrapper main .main__wrapper .content__2 .content__container .content__body .blocks:first-child {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wrapper main .main__wrapper .content__2 .content__container .content__body .blocks:nth-child(2) {
+    display: none;
+  }
+}
+.wrapper main .main__wrapper .content__3 .blocks .block .block__img .img {
+  max-width: 590px;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1190px) {
+  .wrapper main .main__wrapper .content__3 .blocks {
+    justify-content: space-evenly;
+  }
+  .wrapper main .main__wrapper .content__3 .blocks .block:first-child {
+    display: none;
+  }
+}
+.wrapper footer {
+  grid-area: footer;
+  background-color: #141414;
+  min-height: 100%;
+}
+.wrapper footer .footer__wrapper .footer {
+  padding: 93px 0px 0px 0px;
+}
+.wrapper footer .footer__wrapper .footer .footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__title {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__title .title {
+  display: flex;
+  flex-direction: row;
+}
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__title .title h4 {
+  font-family: "LibreFranklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+  margin-left: 20px;
+}
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__title hr {
+  width: 100%;
+  background: #4D4D4D;
+  border-radius: 0px;
+  margin: 62px 0px 62px 0px;
+}
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 70px;
+  align-items: center;
+}
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .title {
+  font-family: "LibreFranklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+  position: relative;
+}
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .text {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+  max-height: 0;
+}
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .text a {
+  font-family: "LibreFranklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .input {
+  display: flex;
+  flex-direction: row;
+}
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .input input {
+  background: #FFFFFF;
+  border: none;
+  font-family: "LibreFranklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+  width: 221px;
+  height: 48px;
+  padding-left: 24px;
+}
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .input .btn {
+  background-color: #000000;
+  border: none;
+  width: 79px;
+}
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .input .btn a {
+  font-family: "LibreFranklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row:nth-child(1) {
+  margin-top: 0px;
+}
+@media (max-width: 780px) {
+  .wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column {
+    margin-top: 40px;
+  }
+  .wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .text {
+    overflow: hidden;
+  }
+  .wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .text.active {
+    display: flex;
+  }
+  .wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .spoiler {
+    cursor: pointer;
+    padding: 0px 0px 0px 30px;
+  }
+  .wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .spoiler::before,
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .spoiler::after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 4px;
+  }
+  .wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .spoiler::before {
+    transform: rotate(40deg);
+    left: 0px;
+  }
+  .wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .spoiler::after {
+    transform: rotate(-40deg);
+    left: 7px;
+  }
+  .wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .spoiler.active::before,
+.wrapper footer .footer__wrapper .footer .footer__container .footer__body .footer__nav .footer__row .column .spoiler.active::after {
+    background-color: red;
+  }
+}
+
+@media (max-width: 780px) {
+  .wrapper {
+    grid-template-rows: 650px 3565px 900px;
+  }
+}
